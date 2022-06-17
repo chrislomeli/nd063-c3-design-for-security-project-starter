@@ -1,0 +1,27 @@
+Task 2 - Tools and Documentation
+
+You will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found.
+
+Identify tools that will allow you to do the following: 
+For each tool - identify an example compliance violation or vulnerability which it might expose:
+---
+
+a. Scan infrastructure as code templates. (compliance violations: Security, CIS AWS Benchmarks, custom OPA rulesets)
+    - Regula
+    - Conftest
+    - OPA rules
+    - Trend Micro Cloud One Conformity 
+
+---
+b. Scan AMI’s or containers for OS vulnerabilities. (compliance violations: (common industry rules such as log4j exploits, etc.)
+    - Prisma
+    - Twistlock 
+
+---
+c. Scan an AWS environment for cloud configuration vulnerabilities. (compliance violations: open ports, missing encrytion, missing logging and monitoring)
+    - Guard Duty
+    - Security Hub
+    - AWS Configuration
+    - AWS Inspector
+
+

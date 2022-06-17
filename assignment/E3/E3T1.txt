@@ -1,0 +1,12 @@
+3. Answer the following questions:
+
+What findings were detected related to the brute force attack?
+--------------------------------------------------------------
+- The attack worked because it got through because the ssh port was open in the security group
+- Monitoring finds : UnauthorizedAccess:EC2/SSHBruteForce warning shows up in Guard Duty
+- Note: This finding is generated only through monitoring traffic on port 22. If your SSH services are configured to use other ports, this finding is not generated.
+- when the ssh port was removed - access was denied
+
+Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information?
+------------------------------------------------------------------------------------------------------------------------------------------------
+- vpc_flow logs track ip port accessw:   2 251647727762 eni-07df1fc0864530f97 45.61.186.148 10.192.11.114 58505 22 6 1 44 1655249295 1655249318 ACCEPT OK
